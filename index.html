@@ -4,94 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Mi hoja de vida</title>
   </head>
-  <br />
-    <h1 style="text-align: center; font-family: Franklin Gothic Medium">
-      Hoja de vida
-    </h1>
-    <hr />
-    <div style="text-align: center">
-      <img src="img/erick.jpg" alt="foto de erick" width="10%" />
-    </div>
-    <h2 style="text-align: center; font-family: Franklin Gothic Medium">
-      Información general
-    </h2>
-    <p style="text-align: center; font-family: Arial; font-size: large">
-      Erick David Henríquez Sierra <br />
-      erickdavid7@hotmail.com <br />
-      +57 3016962090 <br />
-      Medellín, Colombia <br />
-      <a href="https://www.linkedin.com/in/erick-david-henríquez-sierra-254b60127/" target="_blank">LinkedIn</a>
-      <br />
-      <a href="https://github.com/erickdavidhz7" target="_blank">Github</a>
-    </p>
-    <h2 style="text-align: center; font-family: Franklin Gothic Medium">
-      Experiencia laboral
-    </h2>
-    <P>
-        <div style="text-align: center; list-style-position: inside;font-family: Arial; font-size: large">
-            <ul>
-                <li >Tutor de programación de Python, Java y conceptos de computer science con la empresa Tutor.com</li>
-                <li >Backoffice bilingüe con la empresa Zara</li>
-                <li>Asesor de servicio al cliente bilingüe con la empresa Tracfone</li>
-            </ul>
-        </div>
-    </P>
-    <h2 style="text-align: center; font-family: Franklin Gothic Medium">
-        Habilidades técnicas y tecnologías
-      </h2>
-        <div style="text-align: center; list-style-position: inside;font-family: Arial; font-size: large">
-            <ul>
-                <li >Conceptos básicos de computer science</li>
-                <li >Lenguajes de programación con experiencia: Python, Java, C++, C#, JavaScript, TypeScript, HTML, CSS</li>
-                <li>Habilidades con Node JS, React y MySQL</li>
-            </ul>
-        </div>
-    <h2 style="text-align: center; font-family: Franklin Gothic Medium">
-        Intereses
-      </h2>
-      <div style="text-align: center; list-style-position: inside;font-family: Arial; font-size: large">
-        <table style="border:1px solid black; border-radius: 10px; margin-left:auto;margin-right:auto" >
-            <tr>
-                <th>Tecnologías Back-end</th>
-                <th>Tecnologías Front-end</th>
-                <th>Frameworks</th>
-                <th>Lenguajes de programación</th>
-            </tr>
-            <tr>
-                <td>NodeJs</td>
-                <td>React</td>
-                <td>Django</td>
-                <td>C</td>
-            </tr>
-            <tr>
-                <td>Flask</td>
-                <td>CSS</td>
-                <td>SQL</td>
-                <td>PHP</td>
-            </tr>
-            <tr>
-                <td>Spring</td>
-                <td>HTML</td>
-                <td>ExpressJs</td>
-                <td>Ruby</td>
-            </tr>
-        </table>
-    </div>
-    <br>
-    <br>
-    <h2 style="text-align: center; font-family: Franklin Gothic Medium">
-      Contactame!
-    </h2>
-    <hr>
+  <body>
+    <div class="contenedor">
+      <div class="izquierda">
+        <img id="foto" src="img/erick.jpg" alt="foto de erick">
+      <p class="titulo-perfil">CONTACTO</p>
+      <img id="icon-mail" src="img/mail-icon.png"><p class="text-correo">erickdavid7@hotmail.com</p></img>
+      <img id="icon-telefono" src="img/telefono-icon.png"><p class="text-correo">+57 3016962090</p></img>
+      <img id="icon-location" src="img/location-icon.png"><p class="text-correo">Medellín, Colombia</p></img>
+      <img id="icon-globe" src="img/global-icon.png"> <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/erick-david-henríquez-sierra-254b60127/">LinkedIn</a></img>
 
-    <form style="text-align: center; font-family: Franklin Gothic Medium;">
-      <label for="correo">Correo Electronico:</label><br>
-      <input type="text" id="correo" name="correo"><br>
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea>Ingrese su mensaje...</textarea><br>
-      <input type="button" id="Contactar" name="Contactar" value="Contactar">
-    </form>
+      <p class="titulo-habilidades">HABILIDADES</p>
+      <p class="text-bar">Front-end</p>
+      <div class="progress-bar" data-label=""></div>
+      <p class="text-bar">Back-end</p>
+      <div class="progress-bar1" data-label=""></div>
+      <p class="text-bar">Team work</p>
+      <div class="progress-bar2" data-label=""></div>
+      <p class="text-bar">Web Design</p>
+      <div class="progress-bar3" data-label=""></div>
+
+      <p class="titulo-lenguajes">LENGUAJES DE PROGRAMACIÓN</p>
+      <p class="text-bar">JavaScript</p>
+      <div class="progress-bar" data-label=""></div>
+      <p class="text-bar">Python</p>
+      <div class="progress-bar1" data-label=""></div>
+      <p class="text-bar">Java</p>
+      <div class="progress-bar2" data-label=""></div>
+      <p class="text-bar">C#</p>
+      <div class="progress-bar3" data-label=""></div>
+      </div>
+      <div class="derecha">
+        <h1 class="nombre">ERICK</h1>
+        <h1 class="apellido">HENRÍQUEZ</h1>
+        <h2 class="trabajo">Desarrollador de software Back-end</h2>
+        <p class="parrafos">Eficaz Analizando, validando y proponiendo mejoras a fallas existentes en los proyectos,<br> con el apoyo del arquitecto y líder técnico.</p>
+        <br><br>
+        <div class="header-bar">INFORMACIÓN PERSONAL</div>
+        <br><br>
+        <p class="parrafos">He trabajado en diferentes campos mis fuertes serian relacionado a mis habilidades<br>
+           con respecto a la comunicación, solución de problemas, perseverancia y dinamismo<br>
+            que he desarrollado gracias a mi experiencia como tutor de programación y agente<br>
+             de servicio al cliente bilingüe.</p>
+        <p class="parrafos">Tengo buenas competencias con respecto a la programación orientada a objetos<br>
+          debido a la cantidad de problemas y projectos que he realizado con estudiantes<br> 
+          durante mis tutorias que fueron en Python y Java.</p>
+        <br><br>
+        <div class="header-bar">EDUCACIÓN</div>
+        <br><br>
+        <P></P>
+      </div>
+    </div>
   </body>
 </html>

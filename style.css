@@ -220,9 +220,11 @@ body {
 
 #foto {
   max-width: 100%;
+  width: 100%;
   border: 1px;
   margin-top: 40px;
   margin-bottom: 10px;
+  height: auto;
 }
 
 #icon-mail {
@@ -271,10 +273,10 @@ body {
 .nombre {
   border: 1px;
   padding-top: 35px;
-  padding-left: 200px;
+  padding-left: 18vh;
   margin: auto;
   font-family: Tahoma;
-  font-size: 70px;
+  font-size: 6vh;
   text-align: left;
   color: #00385f;
 }
@@ -282,9 +284,9 @@ body {
 .apellido {
   border: 1px;
   margin: auto;
-  padding-left: 70px;
+  padding-left: 3vh;
   font-family: Tahoma;
-  font-size: 90px;
+  font-size: 8vh;
   text-align: left;
 }
 
@@ -311,7 +313,7 @@ body {
   background-color: #00385f;
   border-radius: 30px;
   font-family: Tahoma;
-  font-size: 50px;
+  font-size: 4vh;
   text-align: center;
   color: white;
 }
@@ -349,10 +351,4 @@ body {
   font-size: 25px;
   text-align: left;
   color: black;
-}
-
-@media (max-width: 500px) {
-  body {
-    width: 350;
-  }
 }

@@ -4,8 +4,32 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #134b74af;
   padding: 0;
   margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 3.3fr;
+  grid-template-rows: repeat(4, 1fr);
+  width: min-content;
+}
+
+.izquierda {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  background-color: #00385f;
+  height: auto;
+  width: auto;
+}
+
+.derecha {
+  background-color: white;
+  grid-column: 2;
+  grid-row: 1/5;
+  width: max-content;
 }
 
 .progress-bar {
@@ -119,26 +143,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 3.3fr;
-  grid-template-rows: repeat(4, 1fr);
-  width: min-content;
-}
 
-.izquierda {
-  grid-column: 1/2;
-  grid-row: 1/5;
-  background-color: #00385f;
-  height: auto;
-  width: auto;
-}
-
-.derecha {
-  grid-column: 2;
-  grid-row: 1/5;
-  width: max-content;
-}
 .titulo-perfil {
   margin-top: 15px;
   display: flex;
@@ -304,6 +309,7 @@ body {
   font-family: Tahoma;
   font-size: 20px;
   text-align: left;
+  padding-right: 60px;
 }
 
 .header-bar {
@@ -360,6 +366,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    height: auto;
+    width: auto;
+  }
   .izquierda {
     width: 400px;
   }
@@ -378,7 +388,7 @@ body {
   }
 
   .parrafos {
-    width: 300px;
+    width: 400px;
     text-align: center;
     font-size: 2vh;
   }

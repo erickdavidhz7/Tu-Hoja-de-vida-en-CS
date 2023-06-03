@@ -12,7 +12,7 @@ body {
   margin-top: -25px;
   display: flex;
   position: relative;
-  width: 300px;
+  width: 20em;
   height: 3em;
   background-color: #111;
   border-radius: 1.5em;
@@ -38,7 +38,7 @@ body {
   margin-top: -25px;
   display: flex;
   position: relative;
-  width: 300px;
+  width: 20em;
   height: 3em;
   background-color: #111;
   border-radius: 1.5em;
@@ -64,7 +64,7 @@ body {
   margin-top: -25px;
   display: flex;
   position: relative;
-  width: 300px;
+  width: 20em;
   height: 3em;
   background-color: #111;
   border-radius: 1.5em;
@@ -90,7 +90,7 @@ body {
   margin-top: -25px;
   display: flex;
   position: relative;
-  width: 300px;
+  width: 20em;
   height: 3em;
   background-color: #111;
   border-radius: 1.5em;
@@ -112,9 +112,16 @@ body {
   border-radius: 1em;
   padding: 1em;
 }
+
+.barras {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .contenedor {
   display: grid;
-  grid-template-columns: 1.5fr 3fr;
+  grid-template-columns: 1fr 3.3fr;
   grid-template-rows: repeat(4, 1fr);
 }
 
@@ -122,12 +129,13 @@ body {
   grid-column: 1/2;
   grid-row: 1/6;
   background-color: #00385f;
-  height: min-content;
+  height: auto;
 }
 
 .derecha {
   grid-column: 2;
   grid-row: 1/5;
+  width: max-content;
 }
 .titulo-perfil {
   margin-top: 15px;
@@ -167,13 +175,12 @@ body {
   display: flex;
   margin: auto;
   margin-top: -36px;
-  margin-left: -100px;
+  margin-left: 35%;
   align-items: center;
-  justify-content: center;
   text-align: left;
   color: white;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .text-bar {
@@ -195,7 +202,7 @@ body {
   display: flex;
   margin: auto;
   margin-top: -36px;
-  margin-left: -90px;
+  margin-left: 0%;
   align-items: center;
   justify-content: center;
   text-align: left;
@@ -207,9 +214,10 @@ body {
 }
 
 #foto {
+  max-width: 100%;
   border: 1px;
-  height: 500px;
-  width: 700px;
+  height: auto;
+  width: auto\9; /* ie8 */
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -220,8 +228,8 @@ body {
   margin-top: 20px;
   margin-right: 0;
   padding: 5px;
-  height: 50px;
-  width: 60px;
+  height: 7vh;
+  width: 8vh;
   margin-left: 15px;
 }
 
@@ -231,8 +239,8 @@ body {
   border: 1px;
   margin-top: 20px;
   margin-right: 0;
-  height: 50px;
-  width: 60px;
+  height: 7vh;
+  width: 8vh;
   margin-left: 15px;
 }
 
@@ -241,10 +249,8 @@ body {
   border-radius: 10px;
   border: 1px;
   margin-top: 20px;
-  margin-right: 0;
-
-  height: 50px;
-  width: 60px;
+  height: 7vh;
+  width: 8vh;
   margin-left: 15px;
 }
 
@@ -254,8 +260,8 @@ body {
   border: 1px;
   margin-top: 20px;
   margin-right: 0;
-  height: 50px;
-  width: 60px;
+  height: 7vh;
+  width: 8vh;
   margin-left: 15px;
 }
 
@@ -311,24 +317,20 @@ body {
   padding-left: 50px;
   font-family: Tahoma;
   font-size: 35px;
-
   text-align: left;
   color: gray;
 }
 
 .year-dato {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  grid-template-rows: 1fr 0.2fr;
 }
 
 .dato {
   margin: auto;
-  border: 1px;
-  margin-top: 30px;
-  margin-right: 800px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-
+  align-items: start;
+  justify-content: center;
   font-family: Tahoma;
   font-size: 25px;
   text-align: left;
@@ -337,8 +339,9 @@ body {
 }
 
 .institution {
-  padding-left: 240px;
   margin: auto;
+  grid-row: 2;
+  grid-column: 2;
   font-family: Tahoma;
   font-size: 25px;
   text-align: left;
